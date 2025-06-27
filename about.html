@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>À propos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-a-propos">
+    <div class="welcome-message">
+        <?php 
+        session_start();
+        if (isset($_SESSION['user_name'])) {
+            echo "Bonjour, ".htmlspecialchars($_SESSION['user_name'])." !";
+        }
+        ?>
+    </div>
+    
+    <div class="container">
+        <h1>À propos</h1>
+        <p>Cette plateforme permet aux élèves et aux professeurs de déposer des plaintes de manière totalement anonyme et sécurisée.</p>
+        
+        <div class="nav-links">
+            <a href="index.php">Accueil</a>
+            <?php if (isset($_SESSION['user_id'])): ?>
+                <a href="plainte.php">Déposer une plainte</a>
+                <a href="deconnexion.php">Déconnexion</a>
+            <?php else: ?>
+                <a href="login.php">Connexion</a>
+                <a href="register.html">Inscription</a>
+            <?php endif; ?>
+        </div>
+    </div>
+</body>
+</html>
