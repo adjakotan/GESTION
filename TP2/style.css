@@ -1,0 +1,54 @@
+/* Polices et base */
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Barre de navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 10px 20px;
+    flex-wrap: wrap;
+}
+
+/* Style des images */
+nav img {
+    width: 80px;
+    height: 80PX;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Centrage du titre */
+nav h1 {
+    flex: 1;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    margin: 0;
+    color: #333;
+}
+
+/* Liens des images */
+#lien1, #lien2 {
+    display: flex;
+    align-items: center;
+}
+
+/* Lien du nom Charbel */
+#mon_nom {
+    color: #3366cc;
+    text-decoration: none;
+}
+#mon_nom span {
+    font-weight: bold;
+}
+
+/* Pour les sections */
+section {
+    padding: 20px;
+}
