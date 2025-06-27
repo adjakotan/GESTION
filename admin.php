@@ -41,8 +41,3 @@ $plaintes = $stmt->fetchAll();
 </body>
 </html>  
 
-
-
-
-
-
